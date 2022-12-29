@@ -20,12 +20,18 @@ flags = (
   f"--nimcache:{src/'nimcache'} "
   "--compileOnly "
   f"--cpu:{cpu} "
-  "--deadCodeElim "
-  "--os:standalone "
+#  "--deadCodeElim "
+#"--os:standalone "
+  "--os:any "
   "--noMain "
-  "--gc:none "
+  "--gc:arc "
+#  "--mm:none " # nim-1.6.8 or later
   "--stacktrace:off "
-  "--profiler:off"
+  "--profiler:off "
+  "-d:useMalloc "
+  "-d:noSignalHandler "
+  "--opt:size "
+  "-d:danger "
 )
 
 result = system(f"nim cpp {flags} {src/'main'}")
