@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "license": "MIT",
   "dependencies": {
-      "nimbase": "https://github.com/dinau/nimbase.git"
+      "nimbase": "https://github.com/dinau/nimbase.git#personal_branch"
   },
   "build": {
     "extraScript": "compile.py"
