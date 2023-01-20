@@ -12,7 +12,7 @@ following dependency:
 
 ```ini
 lib_deps =
-  https://github.com/dinau/nim-platformio
+  https://github.com/dinau/nim-platformio#personal_branch
 ```
 
 Also, make sure that [Nim][1] is installed, and that the `nim` executable is
