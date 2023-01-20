@@ -29,6 +29,7 @@ flags = (
   "--stacktrace:off "
   "--profiler:off "
   "-d:useMalloc "
+  "--exceptions:goto "
   "-d:noSignalHandler "
   "--opt:size "
   "-d:danger "
