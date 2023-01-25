@@ -17,6 +17,7 @@ if "espressif" in env.subst("$PIOPLATFORM"):
 
 flags = (
   f"--path:{libdeps} "
+  f"--path:{libdeps}/nim-arduino "
   f"--nimcache:{src/'nimcache'} "
   "--compileOnly "
   f"--cpu:{cpu} "
